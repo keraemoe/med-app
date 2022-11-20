@@ -1,10 +1,8 @@
 ﻿import React from 'react';
 import s from './Hero.module.css'
-<<<<<<< HEAD
-=======
+
 import Group from '../../../assets/Group.png'
 import SearchGroup from '../../../assets/SearchGroup.png'
->>>>>>> 0e87495 (feat: add hero 70%)
 
 const Hero = () => {
     return (
