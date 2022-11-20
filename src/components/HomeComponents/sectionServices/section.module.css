@@ -1,0 +1,33 @@
+#services {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#services > .titles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#services > .titles > h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 47.7734px;
+  line-height: 72px;
+  /* identical to box height */
+
+  color: #404040;
+}
+
+#services > .titles > h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.4739px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #b4b4b4;
+}
