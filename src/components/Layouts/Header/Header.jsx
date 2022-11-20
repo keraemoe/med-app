@@ -7,20 +7,20 @@ const Header = () => {
         <div>
             <header>
                 <div className={s.container}>
-                    <div className={s.header}>
-                        <nav className={s.nav_bar}>
-                            <div className={s.logo}>Hospital <a className={s.second_tag}>logo</a></div>
-                            <ul className={s.navs_ul}>
-                                <li><a className={s.navs} href="news.asp">News</a></li>
-                                <li><a className={s.navs} href="contact.asp">Contact</a></li>
-                                <li><a className={s.navs} href="about.asp">About</a></li>
-                                <li><a className={s.navs} href="default.asp">Home</a></li>
+                    {/* Header Nav */}
+                    <div className={s.header_nav}>
+                        <a className={s.logo} href="#">Hospital <span>logo</span> </a>
+                        <nav className={s.nav}>
+                            <ul className={s.nav_list}>
+                                <li className={s.nav_list}><a href="#" className={s.nav_links}>Главная</a></li>
+                                <li className={s.nav_list}><a href="#" className={s.nav_links}>Как записаться</a></li>
+                                <li className={s.nav_list}><a href="#" className={s.nav_links}>Контакты</a></li>
                             </ul>
-                            <div className={s.auth}>
-                                <button className={s.log} role="button">Log In</button>
-                                <button className={s.reg} role="button">Sign Up</button>
-                            </div>
                         </nav>
+                        <div className={s.auth}>
+                            <a href="#"><button className={s.log}>Log In</button></a>
+                            <a href="#"><button className={s.reg}>Sign Up</button></a>
+                        </div>
                     </div>
                 </div>
             </header>

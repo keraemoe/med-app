@@ -1,6 +1,5 @@
 ﻿import React from 'react';
 import s from './Hero.module.css'
-
 import Group from '../../../assets/Group.png'
 import SearchGroup from '../../../assets/SearchGroup.png'
 
@@ -19,8 +18,11 @@ const Hero = () => {
                         Good health is the state of mental, physical and social well being <br /> and it does not just mean absence of diseases.
                     </p>
                     <div className={s.container_main_btn}>
-                        <input type="text" />
-                        <input type="text" />
+                        <h1>Find a Doctor</h1>
+                        <div>
+                            <input type="text" />
+                            <input type="text" />
+                        </div>
                     </div>
                 </div>
                 <div>

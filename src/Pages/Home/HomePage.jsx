@@ -6,7 +6,7 @@ import s from "./home.module.css";
 const HomePage = () => {
   return (
     <div className={s.Home}>
-      <Hero />
+      {/* <Hero /> */}
       <SectionServices />
     </div>
   );
