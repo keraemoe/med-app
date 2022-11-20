@@ -5,7 +5,7 @@ import s from "./home.module.css";
 
 const HomePage = () => {
   return (
-    <div className={s.Home}> 
+    <div className={s.Home}>
       <Hero />
       <SectionServices />
     </div>
