@@ -1,1 +1,137 @@
-﻿
+﻿.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section_hero {
+  margin-left: 63px;
+  margin-right: 63px;
+  margin-top: 50px;
+  margin-bottom: 108px;
+}
+
+.section_hero div > h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48.4513px;
+  line-height: 53px;
+  color: #4200ff;
+}
+
+.section_hero div > span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.4739px;
+  line-height: 28px;
+  color: #404040;
+}
+
+.section_hero div > span > a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.4739px;
+  line-height: 28px;
+  color: #4200ff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.section_hero div > h1 > span {
+  color: #404040;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48.4513px;
+  line-height: 53px;
+}
+
+.section_hero div > p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.4739px;
+  line-height: 28px;
+  color: #a7a7a7;
+  margin-top: 28px;
+  margin-bottom: 50px;
+}
+
+.container_btn {
+  background: #ffffff;
+  box-shadow: 0px 2.8743px 17.2458px -0.718575px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(14.3715px);
+  border-radius: 28.743px;
+  margin-top: 90px;
+  max-width: 900px;
+}
+
+.container_btn > a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20.6325px;
+  line-height: 31px;
+  color: #404040;
+  margin-left: 28px;
+}
+
+.container_btn div > input {
+  background: #edecec;
+  border-radius: 13.0291px;
+  max-width: 250.82px;
+  height: 58.2px;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.4739px;
+  line-height: 28px;
+  color: rgba(91, 91, 91, 0.47);
+}
+
+@media screen and (max-width: 421px) {
+  .container_btn {
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 40px;
+  }
+  .container_btn div > input {
+    max-width: 200px;
+  }
+}
+
+.container_btn > div {
+  padding-left: 28px;
+  padding-right: 28px;
+  gap: 10px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+.container_btn > div > button {
+  background: linear-gradient(180deg, #4200ff 0%, #3100bb 100%);
+  border-radius: 18.2408px;
+  border: none;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.4739px;
+  line-height: 28px;
+  color: #ffffff;
+  width: 145px;
+}
+
+@media screen and (max-width: 900px) {
+  .container_btn > div > button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+}
