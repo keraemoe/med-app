@@ -2,10 +2,12 @@
 import s from './Hero.module.css'
 import Group from '../../../assets/Group.png'
 import SearchGroup from '../../../assets/SearchGroup.png'
+// import ParticlesBackground from '../../Layouts/ParticlesBackground/ParticlesBackground';
 
 const Hero = () => {
     return (
         <section id={s.hero}>
+            {/* <ParticlesBackground/> */}
             <div className={s.container}>
                 <div className={s.section_hero}>
                     <div className={s.hero_left}>
