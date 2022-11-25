@@ -62,11 +62,13 @@ const SectionServices = () => {
         <motion.div
           initial={{ y: "350px", opacity: 0 }}
           transition={{ delay: 0.4, duration: 0.4 }}
-          animate={{ y: 0, opacity: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
           className={s.block}
         >
           <div>
             <img src={callCenterIcon} alt="" />
+
+
           </div>
           <p>Call Center</p>
         </motion.div>
