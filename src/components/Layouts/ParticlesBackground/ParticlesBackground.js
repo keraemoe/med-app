@@ -1,5 +1,5 @@
 import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles"
+import { loadFull } from "tsparticles";
 
 export default function ParticlesContainer() {
   const particlesInit = async (main) => {
