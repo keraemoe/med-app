@@ -1,6 +1,7 @@
 ﻿import React from 'react';
 import s from '../Header/header.module.css'
 import cn from 'classnames'
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -9,12 +10,15 @@ const Header = () => {
                 <div className={s.container}>
                     {/* Header Nav */}
                     <div className={s.header_nav}>
-                        <a className={s.logo} href="#">Hospital <span>logo</span> </a>
+                        <NavLink to="/">
+                            <a className={s.logo}>Hospital <span>logo</span> </a>
+
+                        </NavLink>
                         <nav className={s.nav}>
                             <ul className={s.nav_list}>
-                                <li className={s.nav_list}><a href="#" className={s.nav_links}>Главная</a></li>
-                                <li className={s.nav_list}><a href="#" className={s.nav_links}>Как записаться</a></li>
-                                <li className={s.nav_list}><a href="#" className={s.nav_links}>Контакты</a></li>
+                                <li className={s.nav_list}><NavLink className={s.nav_links} to="/">Главная</NavLink></li>
+                                <li className={s.nav_list}><NavLink className={s.nav_links} to="/entry">Как записаться</NavLink></li>
+                                <li className={s.nav_list}><NavLink className={s.nav_links} to="/contacts">Контакты</NavLink></li>
                             </ul>
                         </nav>
                         <div className={s.auth}>
