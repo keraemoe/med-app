@@ -61,3 +61,7 @@
   border-radius: 28.743px;
   gap: 52px;
 }
+
+#services > .learn__blocks > .block:hover{
+  background-color: #4200FF;
+}
