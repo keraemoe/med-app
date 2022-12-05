@@ -79,6 +79,7 @@
 }
 
 .container_btn div > input {
+  padding: 10px;
   background: #edecec;
   border-radius: 13.0291px;
   max-width: 250.82px;

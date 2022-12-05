@@ -4,8 +4,8 @@ import { useState } from "react";
 // import ParticlesBackground from '../../Layouts/ParticlesBackground/ParticlesBackground';
 
 const Hero = () => {
-  const [message, setMessage] = useState("Name of Doctor");
-  const [message2, setMessage2] = useState("Speciality");
+  const [message, setMessage] = useState("");
+  const [message2, setMessage2] = useState("");
 
   const handleChange = (event) => {
     setMessage(event.target.value);
@@ -39,12 +39,14 @@ const Hero = () => {
                   defaultValue="Name of Doctor"
                   onChange={handleChange}
                   value={message}
+                  placeholder="Name of Doctor"
                 />
                 <input
                   type="text"
                   defaultValue="Speciality"
-                  onChange={handleChange}
+                  onChange={handleChange2}
                   value={message2}
+                  placeholder="Speciality"
                 />
                 <button>Search</button>
               </div>

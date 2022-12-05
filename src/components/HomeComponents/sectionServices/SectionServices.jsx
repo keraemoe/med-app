@@ -18,7 +18,7 @@ const SectionServices = () => {
           Our Medical Services
         </motion.span>
         <motion.h3
-          initial={{ y: "200px", opacity: 0 }}
+          initial={{ y: "100px", opacity: 0 }}
           transition={{ delay: 0.4, duration: 0.4 }}
           whileInView={{ y: 0, opacity: 1 }}
         >
@@ -38,7 +38,7 @@ const SectionServices = () => {
           <p>Well equipped lab</p>
         </motion.div>
         <motion.div
-          initial={{ y: "200px", opacity: 0 }}
+          initial={{ y: "100px", opacity: 0 }}
           transition={{ delay: 0.4, duration: 0.4 }}
           whileInView={{ y: 0, opacity: 1 }}
           className={s.block}
@@ -49,8 +49,8 @@ const SectionServices = () => {
           <p>Emergency Ambulance</p>
         </motion.div>
         <motion.div
-          initial={{ y: "300px", opacity: 0 }}
-          transition={{ delay: 0.4, duration: 0.4 }}
+          initial={{ y: "100px", opacity: 0 }}
+          transition={{ delay: 1, duration: 0.4 }}
           animate={{ y: 0, opacity: 1 }}
           className={s.block}
         >
@@ -60,7 +60,7 @@ const SectionServices = () => {
           <p>Online Appointment</p>
         </motion.div>
         <motion.div
-          initial={{ y: "350px", opacity: 0 }}
+          initial={{ y: "100px", opacity: 0 }}
           transition={{ delay: 0.4, duration: 0.4 }}
           whileInView={{ y: 0, opacity: 1 }}
           className={s.block}
