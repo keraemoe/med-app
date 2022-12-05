@@ -1,5 +1,5 @@
-import React from "react";
-import s from "./section.module.css";
+﻿import React from "react";
+import s from "./sectionServices.module.css";
 import labIcon from "./images/lab-icon.png";
 import ambulanceIcon from "./images/ambulance-icon.png";
 import onlineIcon from "./images/online-icon.png";
@@ -51,7 +51,7 @@ const SectionServices = () => {
         <motion.div
           initial={{ y: "300px", opacity: 0 }}
           transition={{ delay: 0.4, duration: 0.4 }}
-          whileInView={{ y: 0, opacity: 1 }}
+          animate={{ y: 0, opacity: 1 }}
           className={s.block}
         >
           <div>
@@ -62,7 +62,7 @@ const SectionServices = () => {
         <motion.div
           initial={{ y: "350px", opacity: 0 }}
           transition={{ delay: 0.4, duration: 0.4 }}
-          animate={{ y: 0, opacity: 1 }}
+          whileInView={{ y: 0, opacity: 1 }}
           className={s.block}
         >
           <div>
