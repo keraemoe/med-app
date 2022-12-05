@@ -70,7 +70,7 @@ export default function ParticlesContainer() {
               distance: 600,
               color: "#4200ff",
               opacity: 0.5,
-              width: 2,
+              width: 0.5,
             },
             move: {
               enable: true,
