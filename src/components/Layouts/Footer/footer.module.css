@@ -10,9 +10,8 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
-  padding-top: 170px;
-  min-height: 500px;
-  padding-bottom: 200px;
+  padding-top: 80px;
+  padding-bottom: 50px;
   flex-wrap: wrap;
   align-content: center;
   gap: 30px;
@@ -30,7 +29,6 @@
   font-weight: 600;
   font-size: 42.2722px;
   line-height: 63px;
-
   color: #4200ff;
 }
 

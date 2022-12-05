@@ -1,5 +1,5 @@
 ﻿import React from "react";
-import { slide as Menu } from "react-burger-menu";
+import { scaleRotate as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
 
 export default class Sidebar extends React.Component {
@@ -23,15 +23,26 @@ export default class Sidebar extends React.Component {
         fallDown
         onStateChange={state => this.handleStateChange(state)}
       >
-        <Link onClick={() => this.closeMenu()} className="menu-item" to="/home">
+        <Link
+          onClick={() => this.closeMenu()}
+          className="menu-item"
+          to="/"
+        >
           Home
         </Link>
         <Link
           onClick={() => this.closeMenu()}
           className="menu-item"
-          to="/about"
+          to="/Entry"
         >
-          About
+          Entry
+        </Link>
+        <Link
+          onClick={() => this.closeMenu()}
+          className="menu-item"
+          to="/Contacts"
+        >
+          Contact
         </Link>
       </Menu>
     );
