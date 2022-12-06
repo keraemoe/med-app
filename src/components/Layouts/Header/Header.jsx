@@ -2,18 +2,15 @@
 import s from '../Header/header.module.css'
 import cn from 'classnames'
 import { NavLink } from 'react-router-dom';
-import Sidebar from '../../UI/SideBar/SideBar';
 
 const Header = () => {
     return (
-        <>
+        <div>
             <header>
-                <Sidebar/>
                 <div className={s.container}>
                     <div className={s.header_nav}>
                         <NavLink to="/">
                             <a className={s.logo}>Hospital <span>logo</span> </a>
-
                         </NavLink>
                         <nav className={s.nav}>
                             <ul className={s.nav_list}>
@@ -29,7 +26,7 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-        </>
+        </div>
     );
 };
 

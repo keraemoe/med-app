@@ -57,16 +57,6 @@ const Footer = () => {
                                     Card title
                                 </a>
                             </li>
-                            <li>
-                                <a href="" target="_blank">
-                                    Card title
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank">
-                                    Card title
-                                </a>
-                            </li>
                         </ul>
                     </nav>
                 </motion.div>
@@ -97,12 +87,6 @@ const Footer = () => {
                                 <a href="" target="_blank">
                                     Card title
                                 </a>
-                            </li>
-                            <li>
-                                <a href="">Card title</a>
-                            </li>
-                            <li>
-                                <a href="">Card title</a>
                             </li>
                         </ul>
                     </nav>
