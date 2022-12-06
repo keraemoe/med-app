@@ -6,7 +6,7 @@ import ParticlesContainer from "../components/UI/ParticlesBackground/ParticlesBa
 const HomePage = () => {
   return (
     <div>
-      <ParticlesContainer/>
+      <ParticlesContainer />
       <Hero />
       <SectionServices />
     </div>
