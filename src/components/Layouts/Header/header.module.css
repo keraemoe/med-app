@@ -125,11 +125,18 @@
   transform: scale(0.95);
 }
 
+.burger{
+  display: none;
+}
 @media screen and (max-width: 960px) {
   .nav {
     display: none;
   }
   .auth {
     display: none;
+  }
+  .burger{
+    display: block;
+    right: 0;
   }
 }

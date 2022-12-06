@@ -23,15 +23,21 @@ export default class Sidebar extends React.Component {
         fallDown
         onStateChange={state => this.handleStateChange(state)}
       >
-        <Link onClick={() => this.closeMenu()} className="menu-item" to="/home">
-          Home
+        <Link onClick={() => this.closeMenu()} className="menu-item" to="/">Главная
         </Link>
         <Link
           onClick={() => this.closeMenu()}
           className="menu-item"
-          to="/about"
+          to="/entry"
         >
-          About
+          Как записаться
+        </Link>
+        <Link
+          onClick={() => this.closeMenu()}
+          className="menu-item"
+          to="/contacts"
+        >
+          Контакты
         </Link>
       </Menu>
     );

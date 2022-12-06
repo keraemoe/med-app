@@ -46,6 +46,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 50px;
+
 }
 
 #services > .learn__blocks > .block {
@@ -60,8 +61,12 @@
   backdrop-filter: blur(14.3715px);
   border-radius: 28.743px;
   gap: 52px;
+  transition: 0.5s;
 }
 
 #services > .learn__blocks > .block:hover{
   background-color: #4200FF;
+  color: white;
+  box-shadow: 5px 5px 5px #404040;
+  transform: translateY(-20px) !important;
 }

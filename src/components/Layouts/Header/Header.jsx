@@ -8,7 +8,9 @@ const Header = () => {
     return (
         <>
             <header>
+                <div className={s.burger}>
                 <Sidebar/>
+                </div>
                 <div className={s.container}>
                     <div className={s.header_nav}>
                         <NavLink to="/">

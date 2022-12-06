@@ -93,3 +93,16 @@ ul, li , a {
   background: rgba(0, 0, 0, 0.3);
 }
 
+.bm-burger-button{
+  left: auto;
+  right: 36px;
+}
+
+.bm-menu {
+  background: #373a47;
+  padding: 6.5em 0.5em 0 !important;
+  font-size: 2.15em !important;
+}
+.bm-menu-wrap{
+  width: 450px !important;
+}
