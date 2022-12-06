@@ -9,10 +9,11 @@ import { motion } from "framer-motion";
 const SectionServices = () => {
   return (
     <section id={s.services}>
+      {/* tag */}
       <div className={s.titles}>
         <motion.span
           initial={{ y: "100px", opacity: 0 }}
-          transition={{ delay: 0.4, duration: 0.4 }}
+          transition={{ delay: 0.3, duration: 0.4 }}
           whileInView={{ y: 0, opacity: 1 }}
         >
           Our Medical Services
@@ -25,10 +26,12 @@ const SectionServices = () => {
           We are dedicated to serve you <br /> best medical services
         </motion.h3>
       </div>
+      {/* services block */}
       <div className={s.learn__blocks}>
+        {/* first */}
         <motion.div
           initial={{ y: "100px", opacity: 0 }}
-          transition={{ delay: 0.4, duration: 0.4 }}
+          transition={{ delay: 0.2, duration: 0.4 }}
           whileInView={{ y: 0, opacity: 1 }}
           className={s.block}
         >
@@ -37,9 +40,14 @@ const SectionServices = () => {
           </div>
           <p>Well equipped lab</p>
         </motion.div>
+<<<<<<< HEAD
         <motion.div 
+=======
+        {/* second */}
+        <motion.div
+>>>>>>> AUTH
           initial={{ y: "100px", opacity: 0 }}
-          transition={{ delay: 0.4, duration: 0.4 }}
+          transition={{ delay: 0.2, duration: 0.4 }}
           whileInView={{ y: 0, opacity: 1 }}
           className={s.block}
         >
@@ -48,9 +56,10 @@ const SectionServices = () => {
           </div>
           <p>Emergency Ambulance</p>
         </motion.div>
+        {/* third */}
         <motion.div
           initial={{ y: "100px", opacity: 0 }}
-          transition={{ delay: 1, duration: 0.4 }}
+          transition={{ delay: 0.2, duration: 0.4 }}
           animate={{ y: 0, opacity: 1 }}
           className={s.block}
         >
@@ -59,9 +68,10 @@ const SectionServices = () => {
           </div>
           <p>Online Appointment</p>
         </motion.div>
+        {/* fourth */}
         <motion.div
           initial={{ y: "100px", opacity: 0 }}
-          transition={{ delay: 0.4, duration: 0.4 }}
+          transition={{ delay: 0.2, duration: 0.4 }}
           whileInView={{ y: 0, opacity: 1 }}
           className={s.block}
         >
