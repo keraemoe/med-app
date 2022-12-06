@@ -40,12 +40,8 @@ const SectionServices = () => {
           </div>
           <p>Well equipped lab</p>
         </motion.div>
-<<<<<<< HEAD
-        <motion.div 
-=======
         {/* second */}
         <motion.div
->>>>>>> AUTH
           initial={{ y: "100px", opacity: 0 }}
           transition={{ delay: 0.2, duration: 0.4 }}
           whileInView={{ y: 0, opacity: 1 }}

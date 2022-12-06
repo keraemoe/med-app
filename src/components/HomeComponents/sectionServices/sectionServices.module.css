@@ -46,7 +46,6 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 50px;
-
 }
 
 #services > .learn__blocks > .block {
@@ -64,14 +63,9 @@
   transition: 0.5s;
 }
 
-<<<<<<< HEAD
-#services > .learn__blocks > .block:hover{
-  background-color: #4200FF;
+#services > .learn__blocks > .block:hover {
+  background-color: #4200ff;
   color: white;
   box-shadow: 5px 5px 5px #404040;
   transform: translateY(-20px) !important;
-=======
-#services > .learn__blocks > .block:hover {
-  background-color: #4200ff;
->>>>>>> AUTH
 }
