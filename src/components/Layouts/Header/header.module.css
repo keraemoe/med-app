@@ -125,7 +125,7 @@
   transform: scale(0.95);
 }
 
-.burger{
+.burger {
   display: none;
 }
 @media screen and (max-width: 960px) {
@@ -135,8 +135,9 @@
   .auth {
     display: none;
   }
-  .burger{
+  .burger {
     display: block;
     right: 0;
   }
 }
+
