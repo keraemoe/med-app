@@ -2,7 +2,7 @@
 import s from '../Header/header.module.css'
 import cn from 'classnames'
 import { NavLink } from 'react-router-dom';
-import Sidebar from '../../UI/SideBar/SideBar';
+import Sidebar from '../../UI/SideBar/sidebar';
 
 const Header = () => {
     return (
