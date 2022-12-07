@@ -4,15 +4,14 @@ import MedCard from '../components/MedCardComponents/MedCard';
 import ParticlesContainer from '../components/UI/ParticlesBackground/ParticlesBackground';
 
 
-const Contacts = () => {
+const MCard = () => {
     return (
         <div>
-            <LayoutHeader />
+            <LayoutHeader/>
             <ParticlesContainer />
-            <LayoutHeader />
             <MedCard />
         </div>
     );
 };
 
-export default Contacts;
+export default MCard;

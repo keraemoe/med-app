@@ -4,7 +4,7 @@ import s from './medcard.module.css'
 const MedCard = () => {
     return (
         <div>
-dfsdfdsf
+            dsfdsfds
         </div>
     );
 };

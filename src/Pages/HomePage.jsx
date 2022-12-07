@@ -30,7 +30,7 @@ const HomePage = () => {
       {
         modalType === 'login' ? <Modal open={isAuthed} onCancel={() => dispatch(changeStatusAuthed(!isAuthed))}>Login</Modal> :
 
-          <Modal width={'75%'} open={isAuthed} onCancel={() => dispatch(changeStatusAuthed(!isAuthed))} onOk={() => dispatch(register())}>
+          <Modal open={isAuthed} onCancel={() => dispatch(changeStatusAuthed(!isAuthed))} onOk={() => dispatch(register())}>
             <input type="text" value={inputs.email} onChange={(e) => setInputs({ ...inputs, email: e.target.value })} />
             <input type="text" value={inputs.username} onChange={(e) => setInputs({ ...inputs, username: e.target.value })} />
             <input type="text" value={inputs.password} onChange={(e) => setInputs({ ...inputs, password: e.target.value })} />
