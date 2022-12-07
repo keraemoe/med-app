@@ -3,9 +3,10 @@ import SectionServices from "../components/HomeComponents/sectionServices/Sectio
 import Hero from "../components/HomeComponents/sectionHero/Hero";
 import ParticlesContainer from "../components/UI/ParticlesBackground/ParticlesBackground";
 import { Modal } from "antd";
-import Layout from "../components/Layouts/Layout";
 import { useDispatch, useSelector } from "react-redux";
 import { changeStatusAuthed, register } from "../Redux/Slices/AuthSlice";
+import LayoutHeader from "../components/Layouts/layouts/LayoutHeader";
+import LayoutFooter from "../components/Layouts/layouts/LayoutFooter";
 
 const HomePage = () => {
   const { isAuthed, modalType } = useSelector(state => state.auth);
@@ -19,7 +20,8 @@ const HomePage = () => {
   console.log(inputs)
 
   return (
-    <Layout>
+    <div>
+      <LayoutHeader />
       <ParticlesContainer />
       <Hero />
       <SectionServices />
@@ -35,7 +37,8 @@ const HomePage = () => {
             <button>qweqwe</button>
           </Modal>
       }
-    </Layout>
+      <LayoutFooter />
+    </div>
   );
 };
 
