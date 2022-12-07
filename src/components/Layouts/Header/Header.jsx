@@ -6,7 +6,7 @@ import Sidebar from '../../UI/SideBar/sidebar';
 
 const Header = () => {
     return (
-        <>
+        <div>
             <header>
                 <div className={s.burger}>
                     <Sidebar />
@@ -15,7 +15,6 @@ const Header = () => {
                     <div className={s.header_nav}>
                         <NavLink to="/">
                             <a className={s.logo}>Hospital <span>logo</span> </a>
-
                         </NavLink>
                         <nav className={s.nav}>
                             <ul className={s.nav_list}>
@@ -31,7 +30,7 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-        </>
+        </div>
     );
 };
 
