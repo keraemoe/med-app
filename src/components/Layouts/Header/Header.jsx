@@ -3,8 +3,11 @@ import s from '../Header/header.module.css'
 import cn from 'classnames'
 import { NavLink } from 'react-router-dom';
 import Sidebar from '../../UI/SideBar/sidebar';
+import { changeStatusAuthed, changeTypeOfModal } from '../../../Redux/Slices/AuthSlice';
+import { useDispatch } from 'react-redux';
 
 const Header = () => {
+    const dispatch = useDispatch();
     return (
         <div>
             <header>
@@ -20,12 +23,18 @@ const Header = () => {
                             <ul className={s.nav_list}>
                                 <li className={s.nav_list}><NavLink className={s.nav_links} to="/">Главная</NavLink></li>
                                 <li className={s.nav_list}><NavLink className={s.nav_links} to="/entry">Как записаться</NavLink></li>
-                                <li className={s.nav_list}><NavLink className={s.nav_links} to="/contacts">Контакты</NavLink></li>
+                                <li className={s.nav_list}><NavLink className={s.nav_links} to="/medcard">Мед Карточка</NavLink></li>
                             </ul>
                         </nav>
                         <div className={s.auth}>
-                            <a><button className={s.log}>Log In</button></a>
-                            <a><button className={s.reg}>Sign Up</button></a>
+                            <a><button className={s.log} onClick={() => {
+                                dispatch(changeTypeOfModal('login'))
+                                dispatch(changeStatusAuthed(true))
+                                }}>Log In</button></a>
+                            <a><button className={s.reg} onClick={() => {
+                                dispatch(changeTypeOfModal('register'))
+                                dispatch(changeStatusAuthed(true))
+                                }}>Sign Up</button></a>
                         </div>
                     </div>
                 </div>

@@ -1,15 +1,41 @@
-﻿import React from "react";
+﻿import React, { useState } from "react";
 import SectionServices from "../components/HomeComponents/sectionServices/SectionServices";
 import Hero from "../components/HomeComponents/sectionHero/Hero";
 import ParticlesContainer from "../components/UI/ParticlesBackground/ParticlesBackground";
+import { Modal } from "antd";
+import Layout from "../components/Layouts/Layout";
+import { useDispatch, useSelector } from "react-redux";
+import { changeStatusAuthed, register } from "../Redux/Slices/AuthSlice";
 
 const HomePage = () => {
+  const { isAuthed, modalType } = useSelector(state => state.auth);
+  const dispatch = useDispatch();
+  const [inputs, setInputs] = useState({
+    username: '',
+    email: '',
+    password: ''
+  })
+
+  console.log(inputs)
+
   return (
-    <div>
+    <Layout>
       <ParticlesContainer />
       <Hero />
       <SectionServices />
-    </div>
+
+
+      {
+        modalType === 'login' ? <Modal open={isAuthed} onCancel={() => dispatch(changeStatusAuthed(!isAuthed))}>Login</Modal> :
+
+          <Modal width={'75%'} open={isAuthed} onCancel={() => dispatch(changeStatusAuthed(!isAuthed))} onOk={() => dispatch(register())}>
+            <input type="text" value={inputs.email} onChange={(e) => setInputs({ ...inputs, email: e.target.value })} />
+            <input type="text" value={inputs.username} onChange={(e) => setInputs({ ...inputs, username: e.target.value })} />
+            <input type="text" value={inputs.password} onChange={(e) => setInputs({ ...inputs, password: e.target.value })} />
+            <button>qweqwe</button>
+          </Modal>
+      }
+    </Layout>
   );
 };
 

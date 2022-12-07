@@ -1,1 +1,36 @@
-﻿
+﻿.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.main_container {
+  margin-left: 63px;
+  margin-right: 63px;
+  margin-top: 50px;
+  margin-bottom: 108px;
+}
+
+.tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tag > h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48.4513px;
+  line-height: 53px;
+  color: #404040;
+}
+
+.tag > p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.4739px;
+  line-height: 28px;
+  color: #252222;
+}

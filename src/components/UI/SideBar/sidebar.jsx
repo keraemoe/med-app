@@ -27,6 +27,14 @@ export default class Sidebar extends React.Component {
                 <Link
                     onClick={() => this.closeMenu()}
                     className="menu-item"
+                    to="/profile"
+                >
+                    <img src=''></img>
+                    Профиль
+                </Link >
+                <Link
+                    onClick={() => this.closeMenu()}
+                    className="menu-item"
                     to="/"
                 >
                     Главная

@@ -1,0 +1,1 @@
+﻿export const REGISTER_API = "https://akinay1.pythonanywhere.com/auth/users/"

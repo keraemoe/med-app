@@ -5,7 +5,15 @@ const EntryInstruction = () => {
     return (
         <div id="inst">
             <div className={s.container}>
-                fsdfdsfdsfdsfdsfd
+                <div className={s.main_container}>
+                    <div className={s.tag}>
+                        <h1>Как записаться </h1>
+                        <p>на прием врачу</p>
+                    </div>
+                    <div className="container_info">
+                        
+                    </div>
+                </div>
             </div>
         </div >
     );
