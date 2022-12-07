@@ -1,7 +1,7 @@
 ﻿import React from "react";
 import EntryInstruction from '../components/EntryComponents/EntryInstruction/EntryInstruction';
-import LayoutHeader from '../components/Layouts/layouts/LayoutHeader';
-import ParticlesContainer from '../components/UI/ParticlesBackground/ParticlesBackground';
+import LayoutHeader from '../Layouts/layouts/LayoutHeader';
+import ParticlesContainer from '../UI/ParticlesBackground/ParticlesBackground';
 
 const Entry = () => {
     return (

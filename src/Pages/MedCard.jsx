@@ -1,7 +1,7 @@
 ﻿import React from 'react';
-import LayoutHeader from '../components/Layouts/layouts/LayoutHeader';
+import LayoutHeader from '../Layouts/layouts/LayoutHeader';
 import MedCard from '../components/MedCardComponents/MedCard';
-import ParticlesContainer from '../components/UI/ParticlesBackground/ParticlesBackground';
+import ParticlesContainer from '../UI/ParticlesBackground/ParticlesBackground';
 
 
 const MCard = () => {

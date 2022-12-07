@@ -3,7 +3,7 @@ import s from '../Header/header.module.css'
 import cn from 'classnames'
 import { NavLink } from 'react-router-dom';
 import Sidebar from '../../UI/SideBar/sidebar';
-import { changeStatusAuthed, changeTypeOfModal } from '../../../Redux/Slices/AuthSlice';
+import { changeStatusAuthed, changeTypeOfModal } from '../../Redux/Slices/AuthSlice';
 import { useDispatch } from 'react-redux';
 
 const Header = () => {

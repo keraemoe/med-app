@@ -1,12 +1,12 @@
 ﻿import React, { useState } from "react";
 import SectionServices from "../components/HomeComponents/sectionServices/SectionServices";
 import Hero from "../components/HomeComponents/sectionHero/Hero";
-import ParticlesContainer from "../components/UI/ParticlesBackground/ParticlesBackground";
+import ParticlesContainer from "../UI/ParticlesBackground/ParticlesBackground";
 import { Modal } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import { changeStatusAuthed, register } from "../Redux/Slices/AuthSlice";
-import LayoutHeader from "../components/Layouts/layouts/LayoutHeader";
-import LayoutFooter from "../components/Layouts/layouts/LayoutFooter";
+import LayoutHeader from "../Layouts/layouts/LayoutHeader";
+import LayoutFooter from "../Layouts/layouts/LayoutFooter";
 
 const HomePage = () => {
   const { isAuthed, modalType } = useSelector(state => state.auth);
