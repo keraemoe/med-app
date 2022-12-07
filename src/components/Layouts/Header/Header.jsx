@@ -1,4 +1,4 @@
-﻿import React from 'react';
+﻿import { React, useState } from 'react';
 import s from '../Header/header.module.css'
 import cn from 'classnames'
 import { NavLink } from 'react-router-dom';
@@ -25,8 +25,8 @@ const Header = () => {
                             </ul>
                         </nav>
                         <div className={s.auth}>
-                            <NavLink to="/login"><button className={s.log}>Log In</button></NavLink>
-                            <NavLink to="/register"><button className={s.reg}>Sign Up</button></NavLink>
+                            <a><button className={s.log}>Log In</button></a>
+                            <a><button className={s.reg}>Sign Up</button></a>
                         </div>
                     </div>
                 </div>

@@ -22,7 +22,9 @@ code {
   padding: 0;
 }
 
-ul, li , a {
+ul,
+li,
+a {
   list-style: none;
   text-decoration: none;
 }
@@ -30,7 +32,6 @@ ul, li , a {
   font-family: sans-serif;
   text-align: center;
 } */
-
 
 #App {
   font-family: sans-serif;
@@ -45,9 +46,14 @@ ul, li , a {
 .bm-item {
   display: inline-block;
   text-decoration: none;
-  margin-bottom: 10px;
-  color: #d1d1d1;
+  margin-bottom: 30px;
   transition: color 0.2s;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28.4739px;
+  line-height: 28px;
+  color: #404040;
 }
 
 .bm-item:hover {
@@ -63,16 +69,16 @@ ul, li , a {
 }
 
 .bm-burger-bars {
-  background: #373a47;
+  background: #4200ff;
 }
 
 .bm-cross-button {
-  height: 24px;
-  width: 24px;
+  height: 50px;
+  width: 50px;
 }
 
 .bm-cross {
-  background: #bdc3c7;
+  background: #1e6696;
 }
 
 .bm-menu {
@@ -93,23 +99,22 @@ ul, li , a {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.bm-burger-button{
+.bm-burger-button {
   left: auto;
   right: 36px;
 }
 
 .bm-menu {
-  background: #373a47;
+  background: #ffffff;
   padding: 6.5em 0.5em 0 !important;
   font-size: 2.15em !important;
 }
-.bm-menu-wrap{
+.bm-menu-wrap {
   width: 332px !important;
 }
 
-
 @media screen and (max-width: 450px) {
-  .bm-menu-wrap{
+  .bm-menu-wrap {
     width: 100% !important;
   }
 }

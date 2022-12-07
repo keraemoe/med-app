@@ -34,14 +34,14 @@ export default class Sidebar extends React.Component {
                 <Link
                     onClick={() => this.closeMenu()}
                     className="menu-item"
-                    to="/"
+                    to="/Entry"
                 >
                     Как записаться
                 </Link>
                 <Link
                     onClick={() => this.closeMenu()}
                     className="menu-item"
-                    to="/"
+                    to="/Contacts"
                 >
                     Контакты
                 </Link>

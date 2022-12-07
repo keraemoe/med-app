@@ -1,7 +1,6 @@
 ﻿import React from "react";
 import s from "./Hero.module.css";
 import { useState } from "react";
-// import ParticlesBackground from '../../Layouts/ParticlesBackground/ParticlesBackground';
 
 const Hero = () => {
   const [message, setMessage] = useState("");
@@ -17,7 +16,6 @@ const Hero = () => {
 
   return (
     <section id={s.hero}>
-      {/* <ParticlesBackground/> */}
       <div className={s.container}>
         <div className={s.section_hero}>
           <div className={s.hero_left}>

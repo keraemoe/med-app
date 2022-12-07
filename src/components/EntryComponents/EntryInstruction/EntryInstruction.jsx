@@ -5,9 +5,9 @@ const EntryInstruction = () => {
     return (
         <div id="inst">
             <div className={s.container}>
-                dsfds
+                fsdfdsfdsfdsfdsfd
             </div>
-        </div>
+        </div >
     );
 };
 
