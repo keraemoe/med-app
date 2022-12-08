@@ -1,4 +1,4 @@
-﻿import React, { useState } from "react";
+import React, { useState } from "react";
 import LayoutHeader from '../Layouts/layouts/LayoutHeader';
 import MedCard from '../components/MedCardComponents/MedCard';
 import ParticlesContainer from '../UI/ParticlesBackground/ParticlesBackground';
@@ -36,7 +36,7 @@ const MCard = () => {
                     <span>Don't have an account?<a onClick={() => dispatch(changeTypeOfModal('register'))}>Sign Up</a></span>
                 </Modal> :
 
-                    <Modal open={isAuthed} onCancel={() => dispatch(changeStatusAuthed(!isAuthed))} onOk={() => dispatch(register())}>
+                    <Modal open={isAuthed} onCancel={() => dispatch(changeStatusAuthed(!isAuthed))} onOk={(e) => dispatch(register())}>
                         <h1 className="auth-acc">Sign up For account</h1>
                         <input className="modal_input" type="text" placeholder="Your Name" value={inputs.name} onChange={(e) => setInputs({ ...inputs, name: e.target.value })} />
                         <input className="modal_input" type="text" placeholder="Your Last Name" value={inputs.lastname} onChange={(e) => setInputs({ ...inputs, lastname: e.target.value })} />
