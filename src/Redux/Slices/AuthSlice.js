@@ -18,10 +18,10 @@ export const Auth = createAsyncThunk(
   "auth/Auth",
   async (props, { dispatch }) => {
     try {
-      const {data} = await axios.post(AUTH, props);
-      localStorage.setItem('tokenRefresh', JSON.stringify(data.refresh))
-      localStorage.setItem('tokenAccess', JSON.stringify(data.access))
-      console.log(data)
+      const { data } = await axios.post(AUTH, props);
+      localStorage.setItem("tokenRefresh", JSON.stringify(data.refresh));
+      localStorage.setItem("tokenAccess", JSON.stringify(data.access));
+      console.log(data);
       dispatch(changeAuth());
     } catch (e) {
       dispatch(unUhangeAuth());
@@ -50,13 +50,18 @@ const auth = createSlice({
       state.modalType = action.payload;
     },
     changeAuth: (state) => {
-      state.isAuthed = true
+      state.isAuthed = true;
     },
     unUhangeAuth: (state) => {
-      state.isAuthed = false
-    }
+      state.isAuthed = false;
+    },
   },
 });
 
-export const { changeStatusAuthed, changeTypeOfModal, changeAuth , unUhangeAuth } = auth.actions;
+export const {
+  changeStatusAuthed,
+  changeTypeOfModal,
+  changeAuth,
+  unUhangeAuth,
+} = auth.actions;
 export default auth.reducer;
