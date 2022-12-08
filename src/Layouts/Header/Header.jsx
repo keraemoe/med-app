@@ -5,6 +5,8 @@ import { NavLink } from 'react-router-dom';
 import Sidebar from '../../UI/SideBar/sidebar';
 import { changeStatusAuthed, changeTypeOfModal } from '../../Redux/Slices/AuthSlice';
 import { useDispatch } from 'react-redux';
+import { UserOutlined } from '@ant-design/icons';
+import { Avatar, Badge } from 'antd';
 
 const Header = () => {
     const dispatch = useDispatch();
@@ -21,20 +23,30 @@ const Header = () => {
                         </NavLink>
                         <nav className={s.nav}>
                             <ul className={s.nav_list}>
-                                <li className={s.nav_list}><NavLink className={s.nav_links} to="/">Главная</NavLink></li>
-                                <li className={s.nav_list}><NavLink className={s.nav_links} to="/entry">Как записаться</NavLink></li>
-                                <li className={s.nav_list}><NavLink className={s.nav_links} to="/medcard">Мед Карточка</NavLink></li>
+                                <li className={s.nav_list}><NavLink className={s.nav_links} to="/">Home</NavLink></li>
+                                <li className={s.nav_list}><NavLink className={s.nav_links} to="/entry">Appointment</NavLink></li>
+                                <li className={s.nav_list}><NavLink className={s.nav_links} to="/medcard">Med Card</NavLink></li>
                             </ul>
                         </nav>
                         <div className={s.auth}>
                             <a><button className={s.log} onClick={() => {
                                 dispatch(changeTypeOfModal('login'))
                                 dispatch(changeStatusAuthed(true))
-                                }}>Log In</button></a>
+                            }}>Log In</button></a>
                             <a><button className={s.reg} onClick={() => {
                                 dispatch(changeTypeOfModal('register'))
                                 dispatch(changeStatusAuthed(true))
-                                }}>Sign Up</button></a>
+                            }}>Sign Up</button>
+                            </a>
+                            <NavLink to='/profile'>
+                                <div>
+                                    <span className="avatar-item">
+                                        <Badge count={1}>
+                                            <Avatar shape="square" icon={<UserOutlined />} />
+                                        </Badge>
+                                    </span>
+                                </div>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

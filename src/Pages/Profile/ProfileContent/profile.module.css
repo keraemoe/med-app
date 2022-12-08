@@ -1,17 +1,17 @@
-﻿.head_profile{
-    width: 100%;
-    box-shadow: 1px 1px 5px grey !important;
-    height: 140px;
-    background-color: white;
-    border-radius: 20px;
-    margin-bottom: 50px;
-    display: flex;
+﻿.head_profile {
+  width: 100%;
+  box-shadow: 1px 1px 5px grey !important;
+  height: 140px;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  display: flex;
 }
-.info_name{
-    margin-top: 40px;
-    margin-left: 30px;
+.info_name {
+  margin-top: 40px;
+  margin-left: 30px;
 }
-.hr_profile{
-    margin-top: 10px;
-    margin-bottom: 10px;
+.hr_profile {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

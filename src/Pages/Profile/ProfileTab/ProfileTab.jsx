@@ -9,9 +9,11 @@ const ProfileTab = () => (
       return {
         label: (
           <span>
-            <Icon />
+            <Icon style={{
+              fontSize: '40px'
+            }} />
             {
-                id == 1 ? 'About' : 'ok'
+              id == 1 ? 'About' : 'ok'
             }
           </span>
         ),
