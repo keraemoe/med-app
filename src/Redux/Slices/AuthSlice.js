@@ -19,6 +19,7 @@ const auth = createSlice({
   initialState: {
     isAuthed: false,
     modalType: "register",
+    email: "",
     username: "",
     password: "",
   },
