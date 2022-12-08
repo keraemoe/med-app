@@ -2,6 +2,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import { render } from "@testing-library/react";
+import { Avatar, Badge } from 'antd';
+import { UserOutlined } from '@ant-design/icons';
 
 
 export default class Sidebar extends React.Component {
@@ -25,12 +27,19 @@ export default class Sidebar extends React.Component {
                 fallDown
                 onStateChange={state => this.handleStateChange(state)}>
                 <Link
+                    style={{
+                        display: 'flex',
+                        justifyContent: 'center'
+                    }}
                     onClick={() => this.closeMenu()}
                     className="menu-item"
                     to="/profile"
                 >
-                    <img src=''></img>
-                    Profile
+                    <span className="avatar-item">
+                        <Badge count={1}>
+                            <Avatar shape="square" icon={<UserOutlined />} />
+                        </Badge>
+                    </span>
                 </Link >
                 <Link
                     onClick={() => this.closeMenu()}
@@ -44,7 +53,7 @@ export default class Sidebar extends React.Component {
                     className="menu-item"
                     to="/Entry"
                 >
-                    How to make an appointment?
+                    Appointment
                 </Link>
                 <Link
                     onClick={() => this.closeMenu()}

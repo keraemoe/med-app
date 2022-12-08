@@ -113,8 +113,6 @@ a {
   width: 332px !important;
 }
 
-
-
 @media screen and (max-width: 450px) {
   .bm-menu-wrap {
     width: 100% !important;
@@ -170,4 +168,9 @@ a {
   color: rgba(91, 91, 91, 0.47);
 }
 
-
+.ant-avatar
+  > .ant-avatar-square
+  > .ant-avatar-icon
+  > .css-dev-only-do-not-override-1ij74fp {
+  font-size: 90px;
+}

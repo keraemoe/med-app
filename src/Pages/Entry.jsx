@@ -4,7 +4,7 @@ import LayoutHeader from '../Layouts/layouts/LayoutHeader';
 import ParticlesContainer from '../UI/ParticlesBackground/ParticlesBackground';
 import { Modal } from "antd";
 import { useDispatch, useSelector } from "react-redux";
-import { changeStatusAuthed, register, changeTypeOfModal,  Auth } from "../Redux/Slices/AuthSlice";
+import { changeStatusAuthed, register, changeTypeOfModal, Auth } from "../Redux/Slices/AuthSlice";
 
 
 const Entry = () => {

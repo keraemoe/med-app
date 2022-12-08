@@ -3,7 +3,7 @@ import { Route, Routes, BrowserRouter, Switch } from "react-router-dom";
 import Entry from '../Pages/Entry';
 import HomePage from '../Pages/HomePage';
 import MedCards from '../Pages/MedCard';
-import Profile from '../Pages/Profile/Profile';
+import Profile from '../Pages/Profile';
 
 const Rout = () => {
     return (

@@ -6,16 +6,16 @@ import s from "./entryInstruction.module.css"
 
 const steps = [
     {
-        title: 'First',
-        content: 'First-content',
+        title: 'First...',
+        content: 'Find a doctor from the HomePage and you can contact them',
     },
     {
-        title: 'Second',
-        content: 'Second-content',
+        title: 'Second...',
+        content: 'Follow the link below to find our contacts and contact us',
     },
     {
-        title: 'Last',
-        content: 'Last-content',
+        title: 'Last!',
+        content: 'Or you can contact support',
     },
 ];
 
@@ -48,12 +48,12 @@ const EntryInstruction = () => {
                                     icon: <UserOutlined />,
                                 },
                                 {
-                                    title: 'Verification',
+                                    title: 'Find a Doctor',
                                     status: 'finish',
                                     icon: <SolutionOutlined />,
                                 },
                                 {
-                                    title: 'Find a Doctor',
+                                    title: 'Describe your health problems...',
                                     status: 'process',
                                     icon: <LoadingOutlined />,
                                 },
@@ -64,7 +64,7 @@ const EntryInstruction = () => {
                                 },
                             ]}
                         />
-                        <span className={s.main_tag}>After:</span>
+                        <span className={s.main_tag}>Where can you describe your problems?:</span>
                         <div className={s.container_after}>
                             <Steps current={current} items={items} />
                             <div className="steps-content">{steps[current].content}</div>
@@ -75,7 +75,7 @@ const EntryInstruction = () => {
                                     </Button>
                                 )}
                                 {current === steps.length - 1 && (
-                                    <Button type="primary" onClick={() => message.success('Processing complete!')}>
+                                    <Button type="primary" onClick={() => message.success('Good luck!')}>
                                         Done
                                     </Button>
                                 )}
