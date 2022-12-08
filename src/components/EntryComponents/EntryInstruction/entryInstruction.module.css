@@ -17,11 +17,22 @@
   justify-content: center;
 }
 
-.tag > h1 {
+.tag > .main_tag {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
   font-size: 48.4513px;
+  line-height: 53px;
+  color: #404040;
+}
+
+.main_tag {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35.4513px;
   line-height: 53px;
   color: #404040;
 }
@@ -33,4 +44,16 @@
   font-size: 18.4739px;
   line-height: 28px;
   color: #252222;
+}
+
+.container_info {
+  margin-top: 80px;
+}
+
+.container_info > .main_tag {
+  margin-top: 40px;
+}
+
+.container_after {
+  margin-top: 80px;
 }

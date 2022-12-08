@@ -30,28 +30,28 @@ export default class Sidebar extends React.Component {
                     to="/profile"
                 >
                     <img src=''></img>
-                    Профиль
+                    Profile
                 </Link >
                 <Link
                     onClick={() => this.closeMenu()}
                     className="menu-item"
                     to="/"
                 >
-                    Главная
+                    Home
                 </Link >
                 <Link
                     onClick={() => this.closeMenu()}
                     className="menu-item"
                     to="/Entry"
                 >
-                    Как записаться
+                    How to make an appointment?
                 </Link>
                 <Link
                     onClick={() => this.closeMenu()}
                     className="menu-item"
-                    to="/Contacts"
+                    to="/medcard"
                 >
-                    Контакты
+                    MedCard
                 </Link>
             </Menu>
         );

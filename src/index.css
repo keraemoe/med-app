@@ -119,3 +119,51 @@ a {
   }
 }
 
+.ant-modal-content {
+  height: 80vh;
+}
+
+.modal_input {
+  padding: 10px;
+  max-width: 250.82px;
+  height: 58.2px;
+  background: #f8f7f7;
+  border: 1px solid #dcd7d7;
+  border-radius: 14px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.4739px;
+  line-height: 28px;
+  color: rgba(91, 91, 91, 0.47);
+}
+
+@media screen and (max-width: 421px) {
+  .modal_input {
+    max-width: 200px;
+  }
+}
+
+.auth-acc {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38.6667px;
+  line-height: 58px;
+  color: #404040;
+}
+
+.ant-input {
+  padding: 10px;
+  max-width: 250.82px;
+  height: 58.2px;
+  background: #f8f7f7;
+  border: 1px solid #dcd7d7;
+  border-radius: 14px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.4739px;
+  line-height: 28px;
+  color: rgba(91, 91, 91, 0.47);
+}
