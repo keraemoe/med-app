@@ -1,1 +1,37 @@
-﻿
+﻿.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.user {
+  margin: 50px 63px 90px 63px;
+  padding: 20px;
+  border-radius: 50px;
+  background: linear-gradient(315deg, #e6e6e6, #ffffff);
+  box-shadow: -7px -7px 14px #e3e3e3, 7px 7px 14px #ffffff;
+}
+.med_card {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card {
+  margin-bottom: 30px;
+  box-shadow: 1px 1px 4px grey !important;
+  transition: 0.5s;
+}
+.card:hover {
+  transform: translateY(-20px);
+  box-shadow: 3px 3px 4px grey !important;
+}
+@media screen and (max-width: 662px) {
+  .med_card {
+    justify-content: center;
+  }
+}
+
+.ava {
+  margin-bottom: 30px;
+}

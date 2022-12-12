@@ -29,7 +29,6 @@ const Header = () => {
                             <ul className={s.nav_list}>
                                 <li className={s.nav_list}><NavLink className={s.nav_links} to="/">Home</NavLink></li>
                                 <li className={s.nav_list}><NavLink className={s.nav_links} to="/entry">Appointment</NavLink></li>
-                                <li className={s.nav_list}><NavLink className={s.nav_links} to="/medcard">Med Card</NavLink></li>
                                 <li className={s.nav_list}><NavLink className={s.nav_links} to="/about">About US</NavLink></li>
                             </ul>
                         </nav>
