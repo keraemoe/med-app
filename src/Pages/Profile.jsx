@@ -28,7 +28,6 @@ const Profile = () => {
 
     return (
         <div>
-            <LayoutHeader />
             <ProfilePage/>
             <ParticlesContainer />
             {

@@ -7,8 +7,8 @@
   margin: 50px 63px 90px 63px;
   padding: 20px;
   border-radius: 50px;
-  background: linear-gradient(315deg, #e6e6e6, #ffffff);
-  box-shadow: -7px -7px 14px #e3e3e3, 7px 7px 14px #ffffff;
+  background: #ffffff;
+  box-shadow: 6px 6px 33px #e0e0e0, -6px -6px 33px #ffffff;
 }
 .med_card {
   width: 90%;
@@ -34,4 +34,32 @@
 
 .ava {
   margin-bottom: 30px;
+}
+
+.items {
+  margin: 50px 63px 50px 63px;
+}
+
+.usermed {
+  margin: 0 63px 40px 63px;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35.4513px;
+  line-height: 53px;
+  color: #404040;
+}
+
+.calendar {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35.4513px;
+  line-height: 53px;
+  color: #404040;
 }
