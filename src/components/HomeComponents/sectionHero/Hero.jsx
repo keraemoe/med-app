@@ -53,6 +53,7 @@ const Hero = () => {
           <div className={s.hero_right}></div>
         </div>
       </div>
+      
     </section>
   );
 };

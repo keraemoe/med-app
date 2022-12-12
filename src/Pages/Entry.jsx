@@ -34,6 +34,8 @@ const Entry = () => {
                     <h1 className="auth-acc">Login</h1>
                     <input className="modal_input" type="text" placeholder="Username" value={value.username} onChange={(e) => setValue({ ...value, username: e.target.value })} />
                     <input className="modal_input" type="password" placeholder="Your Password" value={value.password} onChange={(e) => setValue({ ...value, password: e.target.value })} />
+                    <br />
+                    <br /><br />
                     <span>Don't have an account?<a onClick={() => dispatch(changeTypeOfModal('register'))}>Sign Up</a></span>
                 </Modal> :
 

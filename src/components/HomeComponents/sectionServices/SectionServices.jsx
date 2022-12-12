@@ -38,7 +38,7 @@ const SectionServices = () => {
           <div>
             <img src={labIcon} alt="" />
           </div>
-          <p>Well equipped lab</p>
+          <p>Doctors</p>
         </motion.div>
         {/* second */}
         <motion.div
@@ -50,7 +50,7 @@ const SectionServices = () => {
           <div>
             <img src={ambulanceIcon} alt="" />
           </div>
-          <p>Emergency Ambulance</p>
+          <p>Nurses</p>
         </motion.div>
         {/* third */}
         <motion.div
@@ -62,7 +62,7 @@ const SectionServices = () => {
           <div>
             <img src={onlineIcon} alt="" />
           </div>
-          <p>Online Appointment</p>
+          <p>Clinics</p>
         </motion.div>
         {/* fourth */}
         <motion.div
@@ -74,7 +74,7 @@ const SectionServices = () => {
           <div>
             <img src={callCenterIcon} alt="" />
           </div>
-          <p>Call Center</p>
+          <p>Services</p>
         </motion.div>
       </div>
     </section>
