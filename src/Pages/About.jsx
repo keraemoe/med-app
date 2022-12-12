@@ -1,13 +1,11 @@
 ﻿import React, { useState } from "react";
+import AbouPage from '../components/AboutComponents/AbouPage';
 import LayoutHeader from '../Layouts/layouts/LayoutHeader';
-import ParticlesContainer from '../UI/ParticlesBackground/ParticlesBackground';
-import { Modal } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import { changeStatusAuthed, register, changeTypeOfModal, Auth } from "../Redux/Slices/AuthSlice";
+import { Modal } from "antd";
 
-
-
-const Profile = () => {
+const About = () => {
     const { isAuthed, modalType } = useSelector(state => state.auth);
     const dispatch = useDispatch();
     const [inputs, setInputs] = useState({
@@ -28,7 +26,7 @@ const Profile = () => {
     return (
         <div>
             <LayoutHeader />
-            <ParticlesContainer />
+            <AbouPage />
             {
                 modalType === 'login' ? <Modal open={isAuthed} onCancel={() => dispatch(changeStatusAuthed(!isAuthed))} onOk={() => dispatch(Auth(value))}>
                     <h1 className="auth-acc">Login</h1>
@@ -51,4 +49,4 @@ const Profile = () => {
     );
 };
 
-export default Profile;
+export default About;

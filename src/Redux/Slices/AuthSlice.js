@@ -50,10 +50,10 @@ const auth = createSlice({
       state.modalType = action.payload;
     },
     changeAuth: (state) => {
-      state.isAuthed = true;
+      state.isAuthed = false;
     },
     unUhangeAuth: (state) => {
-      state.isAuthed = false;
+      state.isAuthed = true;
     },
   },
 });

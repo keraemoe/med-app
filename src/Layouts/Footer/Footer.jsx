@@ -3,17 +3,7 @@ import s from "./footer.module.css";
 import facebookIcon from "./images/facebook.png";
 import twitterIcon from "./images/twitter.png";
 import instagramIcon from "./images/instagram.png";
-import { motion, Variants } from "framer-motion";
-
-const itemVariants: Variants = {
-    open: {
-        opacity: 1,
-        y: 0,
-        transition: { type: "spring", stiffness: 300, damping: 24 }
-    },
-    closed: { opacity: 0, y: 20, transition: { duration: 0.2 } }
-};
-
+import { motion } from "framer-motion";
 
 const Footer = () => {
     const [isOpen, setIsOpen] = useState(false);

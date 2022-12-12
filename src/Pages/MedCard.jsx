@@ -22,13 +22,14 @@ const MCard = () => {
 
 
 
-    const [passwordVisible, setPasswordVisible] = React.useState(false);
+    const [passwordVisible, setPasswordVisible] = useState(false);
 
     return (
         <div>
             <LayoutHeader />
             <ParticlesContainer />
             <MedCard />
+
             {
                 modalType === 'login' ? <Modal open={isAuthed} onCancel={() => dispatch(changeStatusAuthed(!isAuthed))} onOk={() => dispatch(Auth(value))}>
                     <h1 className="auth-acc">Login</h1>

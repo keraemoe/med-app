@@ -3,13 +3,17 @@ import s from '../Header/header.module.css'
 import cn from 'classnames'
 import { NavLink } from 'react-router-dom';
 import Sidebar from '../../UI/SideBar/sidebar';
-import { changeStatusAuthed, changeTypeOfModal } from '../../Redux/Slices/AuthSlice';
-import { useDispatch } from 'react-redux';
+import { changeAuth, changeStatusAuthed, changeTypeOfModal, unUhangeAuth } from '../../Redux/Slices/AuthSlice';
+import { useDispatch, useSelector } from 'react-redux';
 import { UserOutlined } from '@ant-design/icons';
 import { Avatar, Badge } from 'antd';
 
 const Header = () => {
+    const { isAuthed } = useSelector(state => state.auth)
     const dispatch = useDispatch();
+    const handleRemove = () => {
+        localStorage.clear();
+    }
     return (
         <div>
             <header>
@@ -26,6 +30,7 @@ const Header = () => {
                                 <li className={s.nav_list}><NavLink className={s.nav_links} to="/">Home</NavLink></li>
                                 <li className={s.nav_list}><NavLink className={s.nav_links} to="/entry">Appointment</NavLink></li>
                                 <li className={s.nav_list}><NavLink className={s.nav_links} to="/medcard">Med Card</NavLink></li>
+                                <li className={s.nav_list}><NavLink className={s.nav_links} to="/about">About US</NavLink></li>
                             </ul>
                         </nav>
                         <div className={s.auth}>
@@ -33,11 +38,21 @@ const Header = () => {
                                 dispatch(changeTypeOfModal('login'))
                                 dispatch(changeStatusAuthed(true))
                             }}>Log In</button></a>
-                            <a><button className={s.reg} onClick={() => {
-                                dispatch(changeTypeOfModal('register'))
-                                dispatch(changeStatusAuthed(true))
-                            }}>Sign Up</button>
-                            </a>
+                            {
+                                isAuthed ?
+                                    <a><button className={s.reg} onClick={() => {
+                                        dispatch(changeTypeOfModal('register'))
+                                        dispatch(changeStatusAuthed(true))
+                                    }}>Sign Up</button>
+                                    </a>
+                                    :
+                                    <a><button className={s.reg} onClick={() => {
+                                        dispatch(unUhangeAuth())
+                                        handleRemove()
+                                    }}>Log out</button>
+                                    </a>
+                            }
+
                             <NavLink to='/profile'>
                                 <div>
                                     <span className="avatar-item">

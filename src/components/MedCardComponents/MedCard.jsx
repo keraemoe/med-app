@@ -6,9 +6,8 @@ const MedCard = () => {
     return (
         <div className={s.med_card}>
             <Card className={s.card} title="Card title" bordered={false} style={{ width: 300 }}>
-                <p>Card content</p>
-                <p>Card content</p>
-                <p>Card content</p>
+                <span>Patient Name</span>
+                <span>Alergies</span>
             </Card>
             <Card className={s.card} title="Card title" bordered={false} style={{ width: 300 }}>
                 <p>Card content</p>
